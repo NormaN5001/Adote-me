@@ -3,14 +3,15 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Orelega One', cursive;
 	scroll-behavior: smooth;
 	list-style: none;
 }
 body{
-	background-color: #ededed;
+	background-color: lightgrey;
 }
 header{
+	z-index: 5;
 	position: fixed;
 	display: flex;
 	justify-content: center;
@@ -24,7 +25,6 @@ header{
 }
 h1{
 	color: #c6784d;
-	font-family: 'Orelega One', cursive;
 	font-size: 2rem;
 	text-align: center;
 	padding-top: 1.8vh;
@@ -46,7 +46,6 @@ main{
 }
 button{
 	color: white;
-	font-family: 'Orelega One', cursive;
 	font-size: 1.5rem;
 	margin-top: 3vh;
 	border-radius: 5px;
@@ -63,11 +62,54 @@ button:hover{
 }
 h2{
 	margin-top: 3vh;
-	font-family: 'Orelega One', cursive;
 	font-size: 2rem;
 	color: #c6784d;
 }
 .main-navegation p{
-	font-family: 'Orelega One', cursive;
 	font-size: 1.3rem;
+}
+.info{
+	width: 300px;
+	height: 420px;
+	background-color: white;
+	border-radius: 13px;
+	transform: rotate(0deg);
+	transition: 0.45s;
+}
+.info:hover{
+	cursor: pointer;
+	transform: rotate(10deg);
+	transition: 0.6s;
+}
+.name{
+	text-align: center;
+	font-weight: bold;
+	color: #c6784d;
+	font-size: 1.5rem;
+}
+.info img{
+	width: 300px;
+	border-top-left-radius: 13px;
+	border-top-right-radius: 13px;
+}
+.dogs{
+	flex-wrap: wrap;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 6vh;
+
+	width: 1366px;
+	height: 140vh;
+}
+.age{
+	margin-left: 10px;
+	font-weight: bold;
+	color: black;
+	font-size: 1.5rem;
+}
+.localization{
+	margin-left: 10px;
+	font-weight: bold;
+	color: black;
+	font-size: 1.5rem;
 }
